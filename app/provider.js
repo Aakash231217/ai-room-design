@@ -5,7 +5,7 @@ import axios from "axios";
 import { UserDetailContext } from "./_context/UserDetailContext";
 
 function Provider({children}){
-    
+
     const {user} = useUser();
     const [userDetail,setUserDetail] = useState([]);
     useEffect(()=>{
@@ -27,4 +27,3 @@ function Provider({children}){
 }
 
 export default Provider;
-
